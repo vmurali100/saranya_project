@@ -9,17 +9,64 @@
 </head>
 
 <body>
+    <input type="checkbox" value="20" name="dist"> Under 20KMS <br>
+    <input type="checkbox" value="40" name="dist"> Under 40KMS <br>
+    <input type="checkbox" value="50" name="dist"> Under 50KMS <br>
+    <input type="checkbox" value="+50" name="dist"> Above 50KMS <br>
+    <ul></ul>
     <script>
         function getAllPlaces() {
             var getData = new XMLHttpRequest();
             getData.onreadystatechange = function () {
                 if (getData.readyState == 4 && getData.status == 200) {
-                    allplace = json.parse(getData.responce)
+                    allplacesDetails = JSON.parse(getData.response)
+                    console.log(allplacesDetails)
+                    display(allplacesDetails)
                 }
             }
             getData.open('GET', "http://localhost:3000/allplaces");
             getData.send();
         }
+
+        function display(allplacesDetails) {
+            document.querySelector("ul").innerHTML = ""
+            allplacesDetails.forEach(place => {
+                var li = document.createElement("li")
+                li.innerHTML = place.name
+                document.querySelector("ul").appendChild(li)
+            });
+        }
+
+        function showFilteredData(num) {
+            if (num) {
+
+            } else {
+
+            }
+        }
+        getAllPlaces()
+
+        var allCheckBoxes = document.getElementsByName("dist")
+        allCheckBoxes.forEach(checkbox => {
+            checkbox.addEventListener("change", function (e) {
+                showFilteredData(e.target.value)
+                if (e.target.checked) {
+                    if (e.target.value == +50) {
+                        let filteredPlaces = allplacesDetails.filter((place) => {
+                            return place.distInKms > 50
+                        })
+                        display(filteredPlaces)
+                    } else {
+                        let filteredPlaces = allplacesDetails.filter((place) => {
+                            return place.distInKms < e.target.value
+                        })
+                        display(filteredPlaces)
+                    }
+                } else {
+                    display(allplacesDetails)
+                }
+            })
+        })
     </script>
 </body>
 
