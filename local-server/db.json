@@ -1,0 +1,44 @@
+{
+    "allPlaces": [
+        {
+            "name": "Kanipakam",
+            "distInKms": 68,
+            "pic": "https://assets.thehansindia.com/h-upload/feeds/2019/09/02/212230-temple.jpg"
+        },
+        {
+            "name": "Srikalahasti Temple",
+            "distInKms": 37,
+            "pic": "https://upload.wikimedia.org/wikipedia/commons/9/98/Sri_Kala_Hasti.jpg"
+        },
+        {
+            "name": "Appalayagunta Temple",
+            "distInKms": 16,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        },
+        {
+            "name": " Temple 4",
+            "distInKms": 20,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        },
+        {
+            "name": "Temple 5",
+            "distInKms": 30,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        },
+        {
+            "name": "Temple 6",
+            "distInKms": 40,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        },
+        {
+            "name": "Temple 7",
+            "distInKms": 50,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        },
+        {
+            "name": "Temple 8",
+            "distInKms": 60,
+            "pic": "http://www.tirumalasevainfo.com/wp-content/uploads/2020/05/appalayagunta-sri-prasanna-venkateswara-swamy-bramhotsavam-schedule.jpg"
+        }
+    ]
+}
